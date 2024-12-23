@@ -5,7 +5,7 @@ import Layout from './components/Layout'
 
 function App() {
   return (
-    <BrowserRouter basename="/repository-name">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
