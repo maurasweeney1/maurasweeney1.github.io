@@ -38,5 +38,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://maurasweeney1.github.io/react-portfolio"
+  "homepage": "https://maurasweeney1.github.io/react-portfolio",
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
 }
