@@ -5,7 +5,7 @@ import Layout from './components/Layout'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react-portfolio">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
