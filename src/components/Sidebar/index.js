@@ -1,54 +1,65 @@
-import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react'
 import './index.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import {
+  HomeIcon,
+  UserIcon,
+  MailIcon,
+  GithubIcon,
+  LinkedinIcon,
+} from 'lucide-react'
 
 const Sidebar = () => {
+  const [activePath, setActivePath] = useState('/')
+  const iconSize = 20
+
+  const NavItem = ({ path, icon: Icon, label }) => {
+    const isActive = activePath === path
+
+    return (
+      <a
+        onClick={(e) => {
+          e.preventDefault()
+          setActivePath(path)
+        }}
+        href={path}
+        className={isActive ? 'active' : ''}
+        data-label={label}
+      >
+        <Icon size={iconSize} />
+      </a>
+    )
+  }
+
   return (
     <div className="nav-bar">
       <nav>
-        <NavLink exact="true" activeclassName="active" to="/">
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          exact="true"
-          activeclassname="active"
-          className="about-link"
-          to="/about"
-        >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          exact="true"
-          activeclassname="active"
-          className="contact-link"
-          to="/contact"
-        >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-        </NavLink>
+        <NavItem path="/" icon={HomeIcon} label="HOME" />
+        <NavItem path="/about" icon={UserIcon} label="ABOUT" />
+        <NavItem path="/contact" icon={MailIcon} label="CONTACT" />
       </nav>
+
       <ul>
         <li>
           <a
+            href="https://www.linkedin.com/in/mauraksweeney"
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/mauraksweeney"
           >
-            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+            <LinkedinIcon size={iconSize} />
           </a>
         </li>
         <li>
           <a
+            href="https://github.com/maurasweeney1"
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/maurasweeney1"
           >
-            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+            <GithubIcon size={iconSize} />
           </a>
         </li>
       </ul>
     </div>
   )
 }
+
 export default Sidebar
