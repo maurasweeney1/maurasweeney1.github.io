@@ -57,15 +57,22 @@ const Home = () => {
             ))}
           </span>
         </h1>
-        <p>
-          Hello! My name is Maura Sweeney and I am a junior at Gonzaga
-          University graduating May 2026. I've had the incredible opportunity to
-          study Computer Science, Applied Mathmatics, and Entrepreneurial
-          Leadership focusing on Software Development, Data Analytics, and
-          Adaptive Leadership. I have experience working in Python, SQL, HTML,
-          JavaScript, React, JQuery, CSS, R, C, C# and I am proficient in C++
-          and Java.
-        </p>
+        <span>
+          <img
+            src="../assets/images/meInVenice"
+            alt="Image of me"
+            style={{ width: "75px" }}
+          />
+          <p>
+            Hello! My name is Maura Sweeney and I am a junior at Gonzaga
+            University graduating May 2026. I've had the incredible opportunity
+            to study Computer Science, Applied Mathmatics, and Entrepreneurial
+            Leadership focusing on Software Development, Data Analytics, and
+            Adaptive Leadership. I have experience working in Python, SQL, HTML,
+            JavaScript, React, JQuery, CSS, R, C, C# and I am proficient in C++
+            and Java.
+          </p>
+        </span>
       </div>
     </div>
   );

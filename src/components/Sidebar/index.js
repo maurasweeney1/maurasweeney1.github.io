@@ -11,7 +11,7 @@ import {
 
 const Sidebar = () => {
   const navBarWidth = 100;
-  const iconSize = navBarWidth * 0.5;
+  const iconSize = navBarWidth * 0.4;
 
   const NavItem = ({ path, icon: Icon, label }) => {
     return (

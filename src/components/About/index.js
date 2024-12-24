@@ -10,21 +10,28 @@ const About = () => {
     <>
       <div className="container about-page">
         <h1>About Me</h1>
-        <p>
-          I'm always looking for opportunities to gain new skills and put what
-          I've learned into practice, so I am currently seeking internships to
-          apply my skills in real world scenarios.
-        </p>
-        <p>
-          Read more about my experience in my{" "}
-          <a
-            href="../public/Sweeney.pdf"
-            download="Sweeney.pdf"
-            className="download-button"
-          >
-            Resume
-          </a>
-        </p>
+        <span>
+          <img
+            src="../assets/images/meInLisbon"
+            alt="Image of me"
+            style={"width: 75px"}
+          />
+          <p>
+            I'm always looking for opportunities to gain new skills and put what
+            I've learned into practice, so I am currently seeking internships to
+            apply my skills in real world scenarios.
+          </p>
+          <p>
+            Read more about my experience in my{" "}
+            <a
+              href="../public/Sweeney.pdf"
+              download="Sweeney.pdf"
+              className="download-button"
+            >
+              Resume
+            </a>
+          </p>
+        </span>
         <div>
           <h3>My Best Self</h3>
           <p>
