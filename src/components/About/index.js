@@ -12,7 +12,7 @@ const About = () => {
         <h1>About Me</h1>
         <span>
           <img
-            src="../assets/images/meInLisbon"
+            src="../../assets/images/meInLisbon"
             alt="Image of me"
             style={"width: 75px"}
           />

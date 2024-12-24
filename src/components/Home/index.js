@@ -59,7 +59,7 @@ const Home = () => {
         </h1>
         <span>
           <img
-            src="../assets/images/meInVenice"
+            src="../../assets/images/meInVenice"
             alt="Image of me"
             style={{ width: "75px" }}
           />
