@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import meInLisbon from "../../assets/images/meInLisbon.jpeg";
 
 const About = () => {
   const handleRedirect = () => {
@@ -11,11 +12,7 @@ const About = () => {
       <div className="container about-page">
         <h1>About Me</h1>
         <span>
-          <img
-            src="../../assets/images/meInLisbon"
-            alt="Image of me"
-            style={"width: 75px"}
-          />
+          <img src={meInLisbon} alt="Image of me" style={"width: 75px"} />
           <p>
             I'm always looking for opportunities to gain new skills and put what
             I've learned into practice, so I am currently seeking internships to

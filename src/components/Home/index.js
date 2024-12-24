@@ -8,6 +8,7 @@ import w from "../../assets/letters/w.png";
 import e from "../../assets/letters/e.png";
 import n from "../../assets/letters/n.png";
 import y from "../../assets/letters/y.png";
+import meInVenice from "../../assets/images/meInVenice.jpeg";
 
 const Home = () => {
   const firstNameArray = [
@@ -58,11 +59,7 @@ const Home = () => {
           </span>
         </h1>
         <span>
-          <img
-            src="../../assets/images/meInVenice"
-            alt="Image of me"
-            style={{ width: "75px" }}
-          />
+          <img src={meInVenice} alt="Image of me" style={{ width: "75px" }} />
           <p>
             Hello! My name is Maura Sweeney and I am a junior at Gonzaga
             University graduating May 2026. I've had the incredible opportunity
