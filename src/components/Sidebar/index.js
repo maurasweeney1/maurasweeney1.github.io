@@ -1,28 +1,29 @@
-import React from 'react'
-import './index.scss'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import "./index.scss";
+import { NavLink } from "react-router-dom";
 import {
   HomeIcon,
   UserIcon,
   MailIcon,
   GithubIcon,
   LinkedinIcon,
-} from 'lucide-react'
+} from "lucide-react";
 
 const Sidebar = () => {
-  const iconSize = 20
+  const navBarWidth = 100;
+  const iconSize = navBarWidth * 0.5;
 
   const NavItem = ({ path, icon: Icon, label }) => {
     return (
       <NavLink
         to={path}
-        className={({ isActive }) => (isActive ? 'active' : '')}
+        className={({ isActive }) => (isActive ? "active" : "")}
         data-label={label}
       >
         <Icon size={iconSize} />
       </NavLink>
-    )
-  }
+    );
+  };
 
   return (
     <div className="nav-bar">
@@ -38,6 +39,7 @@ const Sidebar = () => {
             href="https://www.linkedin.com/in/mauraksweeney"
             target="_blank"
             rel="noreferrer"
+            label="LINKEDIN"
           >
             <LinkedinIcon size={iconSize} />
           </a>
@@ -47,13 +49,14 @@ const Sidebar = () => {
             href="https://github.com/maurasweeney1"
             target="_blank"
             rel="noreferrer"
+            label="GITHUB"
           >
             <GithubIcon size={iconSize} />
           </a>
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

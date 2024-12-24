@@ -1,6 +1,6 @@
 .nav-bar {
-    background: #e0e1dd;
-    width: 75px;
+    background: #d6ccc2;
+    width: 100px;
     height: 100%;
     position: fixed;
     top: 0;
@@ -19,14 +19,14 @@
             display: block;
             text-align: center;
             width: 100%;
-            color: #3d638d;
+            color: #97918b;
 
             svg {
                 transition: opacity 0.3s ease-out;
             }
 
             &:hover {
-                color: #000000;
+                color: #59544f;
 
                 svg {
                     opacity: 0;
@@ -45,11 +45,11 @@
                 transform: translate(-50%, -50%);
                 opacity: 0;
                 transition: opacity 0.3s ease-out;
-                font-size: 12px;
+                font-size: 16px;
             }
 
             &.active {
-                color: #415a77;
+                color: #59544f;
             }
         }
     }
@@ -70,11 +70,11 @@
                 display: block;
                 font-size: 15px;
                 line-height: 16px;
-                color: #4a4a4a;
+                color: #97918b;
                 transition: color 0.3s ease-out;
 
                 &:hover {
-                    color: #415a77;
+                    color: #59544f;
                 }
             }
         }
