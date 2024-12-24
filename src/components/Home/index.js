@@ -4,7 +4,7 @@ import letter from '../../assets/letters/m.png'
 
 const Home = () => {
   return (
-    <div className="container home-page">
+    <div className="home-page">
       <div className="text-zone">
         <h1>
           Welcome, <br /> I'm
