@@ -5,14 +5,15 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "animate.css": "^4.1.1",
-    "gh-pages": "^6.2.0",
     "gsap-trial": "^3.12.2",
     "loaders.css": "^0.1.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-leaflet": "^4.2.1",
     "react-loaders": "^3.0.1",
-    "sass": "^1.69.5"
+    "react-router-dom": "^7.1.1",
+    "sass": "^1.69.5",
+    "web-vitals": "^4.2.4"
   },
   "homepage": "https://maurasweeney1.github.io",
   "scripts": {
@@ -24,6 +25,19 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
