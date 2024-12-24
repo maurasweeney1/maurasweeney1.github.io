@@ -4,11 +4,17 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
   font: 300 11px/1.4 'Helvetica Neue', 'sang-serif';
   color: #444;
-  background:#e3d5ca;
-  overflow: hidden;
+  background: #f5f0e8;
+  overflow: auto;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
 }

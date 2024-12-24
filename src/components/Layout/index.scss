@@ -10,7 +10,7 @@
 }
 
 .tags {
-    color: #bdabfd;
+    color: #d8cab1;
     opacity: 0.6;
     position: absolute;
     bottom: 0;
@@ -23,18 +23,29 @@
     margin-left: -20px;
 }
 
-.container{
+.section {
     width: 100%;
-    will-change: contents;
-    height: 90%;
-    min-height: 566px;
-    position: absolute;
+    padding: 50px 0;
+    transition: background-color 0.3s ease;
+}
+
+.section:nth-child(odd) {
+    background-color: #f5f0e8;
+}
+
+.section:nth-child(even) {
+    background-color: #ebe3d5;
+}
+
+.slide-in {
     opacity: 0;
-    top: 5%;
-    margin: 0 auto;
-    z-index: 1;
-    transform-style: preserve-3d;
-    animation: fadeIn 0.5s forwards;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-in.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 @keyframes fadeIn {

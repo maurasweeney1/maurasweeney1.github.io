@@ -4,8 +4,10 @@ const Contact = () => {
   return (
     <>
       <div className="container contact-page">
-        <h1>Contact Me</h1>
-        {/* Your contact content here */}
+        <section className="section">
+          <h1>Contact Me</h1>
+          {/* Your contact content here */}
+        </section>
       </div>
     </>
   );
