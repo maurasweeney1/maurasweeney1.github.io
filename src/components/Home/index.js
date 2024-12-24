@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import './index.scss'
 import m from '../../assets/letters/m.png'
 import a from '../../assets/letters/a.png'

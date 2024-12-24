@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './index.scss'
+import { NavLink } from 'react-router-dom'
 import {
   HomeIcon,
   UserIcon,
@@ -9,24 +10,17 @@ import {
 } from 'lucide-react'
 
 const Sidebar = () => {
-  const [activePath, setActivePath] = useState('/')
   const iconSize = 20
 
   const NavItem = ({ path, icon: Icon, label }) => {
-    const isActive = activePath === path
-
     return (
-      <a
-        onClick={(e) => {
-          e.preventDefault()
-          setActivePath(path)
-        }}
-        href={path}
-        className={isActive ? 'active' : ''}
+      <NavLink
+        to={path}
+        className={({ isActive }) => (isActive ? 'active' : '')}
         data-label={label}
       >
         <Icon size={iconSize} />
-      </a>
+      </NavLink>
     )
   }
 

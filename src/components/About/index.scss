@@ -1,0 +1,17 @@
+.about-page {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    margin-left: 75px;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+    color: black;
+
+    h1 {
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+    }
+}

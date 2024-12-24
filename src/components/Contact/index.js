@@ -1,11 +1,11 @@
 const Contact = () => {
   return (
-    <div className="container contact-page">
-      <div className="text-zone">
+    <>
+      <div className="contact-page">
         <h1>Contact Me</h1>
         {/* Your contact content here */}
       </div>
-    </div>
+    </>
   )
 }
 
